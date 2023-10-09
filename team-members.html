@@ -268,6 +268,20 @@
           </div>
         </div>
       </section>
+      <section class="section courses" data-section="section4" style="padding: 0px 30px 40px 30px;">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading" style="margin-bottom: 0px !important;">
+                <h2>Contributors</h2><br><br>
+                <div class="row1" style=" display: -ms-flexbox;    display: flex;    -ms-flex-wrap: wrap;    flex-wrap: wrap;    margin-right: -15px;    margin-left: -15px;">
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <center>
 
         
@@ -413,11 +427,16 @@
       if (Array.isArray(responseData)) { // Check if responseData is an array
         document.getElementById("loading").style.display = "block";
         const container = document.querySelector(".row2"); // Get the container element
-
+        const container1 = document.querySelector(".row1");
         // Loop through the responseData and create team member cards
         responseData.forEach((member) => {
           const teamMemberCard = createTeamMemberCard(member);
-          container.appendChild(teamMemberCard);
+          if(member.sa_designation == "Contributor"){
+            container1.appendChild(teamMemberCard);
+          }
+          else{
+            container.appendChild(teamMemberCard);
+          }
           
         });
         document.getElementById("loading").style.display = "none";
