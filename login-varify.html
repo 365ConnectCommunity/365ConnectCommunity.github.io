@@ -119,7 +119,7 @@
     <header class="main-header clearfix" role="header">
         <div class="logo">
             <img id="header-logo" style="height: 50px; margin-right: 20px;" src="./favicon.ico">
-            <a href="./index.html" style="text-decoration: none; font-size: 29px !important;"><em></em><span
+            <a href="./" style="text-decoration: none; font-size: 29px !important;"><em></em><span
                     style="color: #feb70c;">3</span><span style="color: #5ea904;">6</span><span
                     style="color: #04a0ed;">5</span><span style="color: white;">C</span><span
                     style="text-transform: lowercase;">onnect</span></a><!--#ce392c;-->
@@ -127,28 +127,28 @@
         <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
         <nav id="menu" class="main-nav" role="navigation">
             <ul class="main-menu">
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="./">Home</a></li>
                 <li class="has-submenu"><a href="#">Our Family</a>
                     <ul class="sub-menu">
-                        <li><a href="./team-members.html" class="external">Contributors</a></li>
-                        <li><a href="./community-members.html" class="external">Members</a></li>
-                        <li><a href="./become-contributor.html" class="external">Become Contributor</a></li>
-                        <li><a href="./signup.html" class="external">Become Member</a></li>
+                        <li><a href="./team-members" class="external">Contributors</a></li>
+                        <li><a href="./community-members" class="external">Members</a></li>
+                        <li><a href="./become-contributor" class="external">Become Contributor</a></li>
+                        <li><a href="./signup" class="external">Become Member</a></li>
                     </ul>
                 </li>
                 <li class="has-submenu"><a href="#">Resources</a>
                     <ul class="sub-menu">
-                        <li><a href="./events.html" class="external">Events</a></li>
-                        <li><a href="./blog.html" class="external">Blogs</a></li>
-                        <li><a href="./courses.html" class="external">Courses</a></li>
-                        <li><a href="./sample-soltutions.html" class="external">Sample Solutions</a></li>
+                        <li><a href="./events" class="external">Events</a></li>
+                        <li><a href="./blog" class="external">Blogs</a></li>
+                        <li><a href="./courses" class="external">Courses</a></li>
+                        <li><a href="./sample-soltutions" class="external">Sample Solutions</a></li>
                     </ul>
                 </li>
                 <li class="has-submenu"><a href="#">Contact Us</a>
                     <ul class="sub-menu">
-                        <li><a href="./support.html" class="external">Get Support</a></li>
-                        <li><a href="./index.html" class="external">Seek Guidance</a></li>
-                        <li><a href="./our-socials.html" class="external">Our Socials</a></li>
+                        <li><a href="./support" class="external">Get Support</a></li>
+                        <li><a href="./" class="external">Seek Guidance</a></li>
+                        <li><a href="./our-socials" class="external">Our Socials</a></li>
                     </ul>
                 </li>
                 <!-- <li><a href="https://365connectcommunity.azurewebsites.net/" class="external" id="cartimg"></a></li> -->
@@ -172,12 +172,12 @@
     if (localStorage.getItem("name") == null || localStorage.getItem("email") == null || localStorage.getItem("email") == 'null' || localStorage.getItem("name") == 'null' || localStorage.getItem("email") == '' || localStorage.getItem("name") == '') {
         console.log("not signed in")
         if (localStorage.getItem("email1") == null || localStorage.getItem("email1") == 'null' || localStorage.getItem("email1") == 'undefined' || localStorage.getItem("email1") == undefined) {
-            let url = "./login.html";
+            let url = "./login";
             window.location.href = url;
         }
     }
     else {
-        let url = "./my-profile.html";
+        let url = "./my-profile";
         window.location.href = url;
     }
     const authorElement = document.querySelector('.author1');
@@ -195,8 +195,8 @@
     <li class="has-submenu active">
       <img id= "myprofilepic" src="./assets/images/icons8-account-64.png" style="width:45px;height:45px;border-radius:200px;border:0px solid orange;">
       <ul class="sub-menu">
-        <li><a href="./login.html" class="external">Sign In</a></li>
-        <li><a href="./signup.html" class="external">Sign Up</a></li>
+        <li><a href="./login" class="external">Sign In</a></li>
+        <li><a href="./signup" class="external">Sign Up</a></li>
       </ul>
     </li>
   `;
@@ -206,10 +206,10 @@
     <li class="has-submenu active">
       <img id= "myprofilepic" src="data:image/png;base64,${localStorage.getItem("image")}" style="width:45px;height:45px;border-radius:200px;border:2px solid orange;">
       <ul class="sub-menu">
-        <li><a href="./login.html" class="external">${localStorage.firstname}</a></li>
-        <li><a href="./login.html" class="external">My Registrations</a></li>
-        <li><a href="./my-certificates.html" class="external">My Certificates</a></li>
-        <li><a href="./index.html" class="external" id="logout">Sign Out</a></li>
+        <li><a href="./login" class="external">${localStorage.firstname}</a></li>
+        <li><a href="./login" class="external">My Registrations</a></li>
+        <li><a href="./my-certificates" class="external">My Certificates</a></li>
+        <li><a href="./" class="external" id="logout">Sign Out</a></li>
       </ul>
     </li>
   `;
@@ -235,7 +235,7 @@
             localStorage.setItem("name", null);
             localStorage.setItem("email", null);
             localStorage.setItem("image", null);
-            window.location.href = './index.html';
+            window.location.href = './';
 
         });
     const url_string = window.location.href;
@@ -291,7 +291,7 @@
                 .then(response => {
                     if (response.status === 200) {
                         // Construct the URL to navigate to
-                        const url = "./my-profile.html";
+                        const url = "./my-profile";
                         localStorage.setItem("email", localStorage.email1);
                         localStorage.setItem("name", localStorage.name1);
                         localStorage.setItem("firstname", localStorage.firstname1);
@@ -323,7 +323,7 @@
 
 
         }
-        //window.location.replace("./registrations.html?email="+document.getElementById("email").value)
+        //window.location.replace("./registrations?email="+document.getElementById("email").value)
     }
     function showError(alert, alertType) {
         var message = document.getElementById("message");
