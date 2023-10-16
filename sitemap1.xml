@@ -1,77 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<!--  created with sitemap generator https://octopus.do  -->
-
     <url>
-        <loc>https://365connectcommunity.github.io</loc>
+        <loc>https://365connectcommunity.github.io/index.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/team-members</loc>
+        <loc>https://365connectcommunity.github.io/team-members.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/community-members</loc>
+        <loc>https://365connectcommunity.github.io/community-members.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/become-contributor</loc>
+        <loc>https://365connectcommunity.github.io/become-contributor.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/signup</loc>
+        <loc>https://365connectcommunity.github.io/signup.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/events</loc>
+        <loc>https://365connectcommunity.github.io/events.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/blog</loc>
+        <loc>https://365connectcommunity.github.io/blog.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/courses</loc>
+        <loc>https://365connectcommunity.github.io/courses.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/our-socials</loc>
+        <loc>https://365connectcommunity.github.io/our-socials.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/support</loc>
+        <loc>https://365connectcommunity.github.io/support.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/login</loc>
+        <loc>https://365connectcommunity.github.io/login.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://365connectcommunity.github.io/sample-solutions</loc>
+        <loc>https://365connectcommunity.github.io/sample-solutions.html</loc>
         <lastmod>2023-10-16</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
     </url>
 </urlset>
