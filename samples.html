@@ -523,12 +523,12 @@ https://templatemo.com/tm-557-grad-school
     // Define variables to track pagination
     let currentPage = 1;
     const cardsPerPage = 6; // Change this to the desired number of cards per page
-
-    // Function to display cards for the current page
-    function displayCurrentPage() {
-      const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.card');
       const startIndex = (currentPage - 1) * cardsPerPage;
       const endIndex = startIndex + cardsPerPage;
+    // Function to display cards for the current page
+    function displayCurrentPage() {
+      
 
       cards.forEach((card, index) => {
         if (index >= startIndex && index < endIndex) {
