@@ -240,7 +240,7 @@
       <div class="row">
         <div class="col-md-6 align-self-center">
           <div class="left-content">
-            <span>our presentation is for you</span>
+            <span>Our presentation is for you</span>
             <h4>Watch the video to learn more <em>about 365Connect Community</em></h4>
             <p>365Connect is a community dedicated to promoting and advancing the adoption of Microsoft D365 and Power
               Platform technologies. Our primary goal is to foster a supportive environment where individuals can learn,
@@ -344,9 +344,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -370,8 +367,6 @@
       document.getElementById("header-logo").hidden = true;
     }
 
-    ///////////////
-    // Menu data structure
     var signedIn = localStorage.getItem("name") == null || localStorage.getItem("email") == null || localStorage.getItem("email") == 'null' || localStorage.getItem("name") == 'null' || localStorage.getItem("email") == '' || localStorage.getItem("name") == '' || localStorage.getItem("email") == undefined || localStorage.getItem("name") == undefined;
     function generateProfileSubMenu() {
       if (signedIn) {
@@ -400,23 +395,13 @@
   `;
       }
     }
-
-
-    // Add a click event listener
-
-
-    // Find the parent ul element with the class "main-menu"
     const mainMenu = document.querySelector('.main-menu');
-
-    // Append the "Profile" submenu HTML to the mainMenu
     mainMenu.insertAdjacentHTML('beforeend', generateProfileSubMenu());
     const myLink = document.getElementById('logout');
     if (document.getElementById('logout'))
       myLink.addEventListener('click', function (event) {
-        // Prevent the default behavior (e.g., navigating to the href URL)
         event.preventDefault();
 
-        // You can also perform other actions here
         localStorage.setItem("name", null);
         localStorage.setItem("email", null);
         localStorage.setItem("image", null);
@@ -429,8 +414,6 @@
       document.querySelector(".video-item").hidden = true;
       document.getElementById("header-logo").hidden = true;
     }
-
-
     function submitForm() {
       document.getElementById("loading").style.display = "block";
       while (document.querySelector(".alert")) {
