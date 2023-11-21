@@ -357,9 +357,6 @@
   <script>
     const email = localStorage.getItem("email");
     const fullname = localStorage.getItem("name");
-
-
-
     if (screen.height > screen.width) {
       document.querySelector(".video-item").hidden = true;
       document.getElementById("header-logo").hidden = true;
@@ -479,7 +476,6 @@
           })
           .then(result => {
             document.getElementById("loading").style.display = "none";
-            // Do something with the result (e.g., display a success message)
             console.log('Registration Successful:', result);
           })
           .catch(error => {
