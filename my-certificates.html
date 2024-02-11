@@ -140,7 +140,7 @@
             <h2 style="color: white !important;">My Certificates</h2>
             <hr style=" border: 2px solid white; border-radius: 20px;">
         </center>
-        <ul id="event-list1"></ul><br>
+        <ul id="event-list1" style="    display: flow-root !important;  "></ul><br>
         <div class="row"></div>
         <div class="message" id="message1">
         </div>
@@ -387,6 +387,7 @@
     titleElement.classList.add('card-title');
     titleElement.style.backgroundColor = "#131e32";
     titleElement.style.color = "white";
+    titleElement.style.width = "100%";
     titleElement.style.height = "150px";
     titleElement.textContent = certificate["sa_eventname"];
 
